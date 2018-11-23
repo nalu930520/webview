@@ -1,0 +1,183 @@
+.shareWraper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  .gameShare {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-height: 667px;
+    overflow: hidden;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    background-color:rgb(39, 55, 140);
+    background-image: url('../../assets/shareBg.png');
+    background-position: left top;
+    background-size: 20px;
+    .recordImg {
+      width: 300px;
+      margin: 0 auto;
+      display: block;
+    }
+    .topWraper {
+      height: 221px;
+      overflow: hidden;
+    }
+    .shareInfo {
+      width: 270px;
+      border-radius: 4px;
+      border: 2px solid #000;
+      margin: 0 auto;
+      background: #fff;
+      margin-top: 10px;
+      box-shadow: -5px 5px 0 #FFE91F, -7px 7px 0 #000;
+      transform: translate(7px);
+      padding: 8px 15px;
+      .statusImg {
+        height: 40px;
+        padding: 10px 0;
+      }
+      .infoTop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 8px;
+        position: relative;
+        border-bottom: 1px dashed #000;
+        // &:after {
+        //   content: ''!important;
+        //   height: 1px;
+        //   background: linear-gradient(to right, #000000, #000000 4px, transparent 4px, transparent);
+        //   background-size: 8px 100%;
+        //   width: 100%;
+        //   position: absolute;
+        //   left: 0;
+        //   bottom: 0;
+        // }
+        > img {
+          width: 42px;
+          height: 42px;
+        }
+        > div {
+          margin-left: 15px;
+        }
+      }
+      .infoBottom {
+        font-size: 14px;
+        color: #000;
+        ul {
+          li {
+            display: flex;
+            justify-content: space-between;
+            line-height: 32px;
+            > span:first-child {
+            color: #999999;
+            }
+          }
+        }
+      }
+    }
+    .recordTitle {
+      width: 275px;
+    }
+    .titleWraper {
+      padding-top: 15px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 22px;
+        .elipse {
+          width: 500px;
+          height: 140px;
+          border: 3px solid #fff;
+          background: transparent;
+          border-radius: 50%;
+          position: absolute;
+          left: 50%;
+          bottom: 20px;
+          transform: translate(-50%);
+        }
+    }
+    .middleImg {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: url('../../assets/shareBottomBg.png');
+      background-size: 100%;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      .title {
+        font-size: 12px;
+        color: #000000;
+        background: #FFE91F;
+        border: 2px solid #000000;
+        border-radius: 4px;
+        width: 145px;
+        margin: 0 auto;
+        position: relative;
+        padding: 2px 0;
+        margin-bottom: 10px;
+        img {
+          width: 167px;
+          position: absolute;
+          left: 0;
+          top: -5px;
+          transform: translate(0, -100%);
+  
+        }
+      }
+      .qrcodeWraper {
+        background: url('../../assets/qrbg.png');
+        background-position: top center;
+        background-size: 288px 96px;
+        background-repeat: no-repeat;
+        .qrcodeTop {
+          position: relative;
+          width: 110px;
+          height: 110px;
+          margin: 0 auto;
+          background: #FFE91F;
+          padding: 6px;
+          border: 2px solid #000000;
+          border-radius: 4px;
+          box-sizing: border-box;
+          img {
+            width: 100%;
+            height: 100%;
+            vertical-align: bottom;
+          }
+          .qrcode-icon {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        .qrbottom {
+          width: 56px;
+          // height 27px;
+          height: 74px;
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+          left: 50%;
+          transform: translate(-50%, 0);
+          &:before, &:after {
+            content: ''!important;
+            width: 4px;
+            border-left: 2px solid #000;
+            border-right: 2px solid #000;
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+}

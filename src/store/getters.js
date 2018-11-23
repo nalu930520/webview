@@ -1,0 +1,13 @@
+export const remainSecond = state => state.remainSecond
+export const remainTime = state => state.remainTime
+export const remainType = state => state.remainType
+export const history = state => state.history
+export const currentPrice = state => state.currentPrice
+export const participateResult = state => state.participateResult
+export const myBetHistory = state => state.myBetHistory
+export const rewardInfo = state => state.rewardInfo
+export const nextRewardPerson = state => state.nextRewardPerson
+export const rewardPrice = state => state.rewardPrice
+export const gameFlg = state => state.gameFlg
+export const gameInfo = state => state.gameInfo
+export const customerId = state => state.customerId

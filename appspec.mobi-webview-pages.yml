@@ -1,0 +1,39 @@
+version: 0.0
+os: linux
+files:
+  - source: /dist
+    destination: /jenkinsci/mobi-webview-pages/dist
+  - source: /ansible
+    destination: /jenkinsci/mobi-webview-pages/ansible
+  - source: /appspec.mobi-webview-pages.yml
+    destination: /jenkinsci/mobi-webview-pages/
+permissions:
+  - object: /jenkinsci
+    pattern: "mobi-webview-pages"
+    owner: nginx
+    group: root
+    mode: 554
+    type:
+      - directory
+  - object: /jenkinci/mobi-webview-pages
+    pattern: "dist"
+    owner: nginx
+    group: root
+    mode: 554
+    type:
+      - directory
+  - object: /jenkinsci/mobi-webview-pages/dist
+    pattern: "**"
+    owner: nginx
+    group: root
+    mode: 664
+    type:
+      - file
+  - object: /jenkinsci/mobi-webview-pages/ansible/scripts
+    pattern: "**"
+    owner: nginx
+    group: root
+    mode: 755
+    type:
+      - file
+
